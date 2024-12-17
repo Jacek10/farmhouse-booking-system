@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Button Example</title>
+    <style>
+        .image-button {
+            width: 300px; /* Set the size of the image button */
+            cursor: pointer;
+            margin: 10px;
+        }
+        #displayedImage {
+            margin-top: 60px;
+            max-width: 1200px; /* Set the max width of the displayed image */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Here are some good clicks from our farm house</h1>
+
+<!-- Image buttons -->
+<img src="https://lh3.googleusercontent.com/p/AF1QipNYN9_IKtgTRaKbnYMGkpJad75eEXG4kXg8egPE=s680-w680-h510" alt="Image 1" class="image-button" onclick="showImage('image1.jpg')">
+<img src="https://lh5.googleusercontent.com/p/AF1QipM800ze4nyg25pKddPUELqXUjF2_TnMJlcey6nF=w141-h118-n-k-no-nu" alt="Image 2" class="image-button" onclick="showImage('image2.jpg')">
+<img src="https://lh3.googleusercontent.com/p/AF1QipO75ntliSDWUSs8a25uoqEsJ8KVXUFka11n1VEy=s680-w680-h510" alt="Image 3" class="image-button" onclick="showImage('image3.jpg')">
+<img src="https://lh3.googleusercontent.com/p/AF1QipMXq_ffpY_brI8iuXRZjXkIfB3oEkdCxnOG9YiL=s680-w680-h510" alt="Image 3" class="image-button" onclick="showImage('image3.jpg')">
+<img src="https://lh3.googleusercontent.com/p/AF1QipMJOIOchvJ69h2KBDevOLRVqcc79GYCRJZMXdUm=s680-w680-h510" alt="Image 3" class="image-button" onclick="showImage('image3.jpg')">
+<img src="https://lh3.googleusercontent.com/p/AF1QipNOqliH1P98fHMTuO0ODD6Tb-QrGeQBTFBRBIj3=s680-w680-h510" alt="Image 3" class="image-button" onclick="showImage('image3.jpg')">
+
+<!-- Area to display the selected image -->
+<img id="displayedImage" src="" alt="Selected Image" style="display:none;">
+
+<script>
+    function showImage(src) {
+        const displayedImage = document.getElementById('displayedImage');
+        displayedImage.src = src;
+        displayedImage.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
